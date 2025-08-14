@@ -1,0 +1,305 @@
+/* Add this at the top of your existing styles.css */
+/* ===== RESPONSIVE UPDATES ===== */
+@media (max-width: 1200px) {
+  .dropdown-content {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .dropdown-right {
+    flex-direction: column;
+  }
+  
+  .product-card {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    padding: 15px 20px;
+    flex-wrap: wrap;
+  }
+  
+  .nav-left, .nav-right {
+    display: none;
+  }
+  
+  .mobile-menu-btn {
+    display: block;
+    order: 1;
+  }
+  
+  .logo {
+    order: 2;
+    left: 0;
+    flex: 0 0 auto;
+    margin: 0 auto;
+  }
+  
+  .nav-right {
+    order: 3;
+  }
+  
+  .video-hero {
+    height: 70vh;
+  }
+  
+  .video-content h3 {
+    font-size: 2rem;
+  }
+  
+  .collections-container {
+    padding: 0 20px;
+  }
+  
+  .collection-card {
+    width: calc(50% - 15px);
+  }
+  
+  .new-products-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .image-grid {
+    margin-top: 0;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 150px);
+  }
+  
+  .product-slider-wrapper {
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  .capsules-slide {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+  
+  .capsules-content {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .capsules-image {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .dot-navigation {
+    position: static;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-hero {
+    height: 60vh;
+  }
+  
+  .collections-section h2 {
+    font-size: 2rem;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .collection-card {
+    width: 100%;
+    height: 350px;
+  }
+  
+  .favorites-track {
+    flex-direction: column;
+  }
+  
+  .favorite-item {
+    min-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .subscriptions-section {
+    height: auto;
+    padding: 40px 20px;
+  }
+  
+  .favorite-card {
+    width: 100%;
+    margin-left: 0;
+  }
+  
+  .virtual-tours-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .virtual-tours-text {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .reviews-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .insta-item {
+    flex: 0 0 50%;
+  }
+  
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .video-hero {
+    height: 50vh;
+  }
+  
+  .video-content h3 {
+    font-size: 1.5rem;
+  }
+  
+  .shop-now-btn {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+  
+  .collections-container {
+    padding: 0 10px;
+  }
+  
+  .arrow {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+  
+  .new-product-card, .capsule-product-card {
+    width: 100%;
+  }
+  
+  .product-filters {
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .filter-btn {
+    margin: 5px;
+  }
+  
+  .image-grid {
+    grid-template-rows: repeat(2, 120px);
+  }
+  
+  .capsules-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .insta-item {
+    flex: 0 0 100%;
+  }
+  
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-col {
+    margin-bottom: 20px;
+  }
+}
+
+/* Mobile Menu Styles */
+.mobile-menu {
+  display: none;
+  width: 100%;
+  background: white;
+  padding: 20px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+}
+
+.mobile-menu.active {
+  display: block;
+}
+
+.mobile-dropdown {
+  margin-bottom: 15px;
+}
+
+.mobile-dropbtn {
+  width: 100%;
+  text-align: left;
+  padding: 10px 0;
+  border: none;
+  background: none;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-dropdown-content {
+  display: none;
+  padding-left: 15px;
+}
+
+.mobile-dropdown-content a {
+  display: block;
+  padding: 8px 0;
+  color: #333;
+  text-decoration: none;
+}
+
+/* Search Overlay Mobile */
+.search-overlay {
+  padding: 20px;
+}
+
+.search-box {
+  width: 90%;
+}
+
+.search-box input {
+  font-size: 20px;
+}
+
+/* Cart Drawer Mobile */
+.cart-drawer {
+  width: 40%;
+  right: -90%;
+}
+
+/* Hide desktop dropdowns on mobile */
+@media (max-width: 992px) {
+  .christmas-dropdown,
+  .coffee-dropdown,
+  .subscriptions-dropdown,
+  .accessories-dropdown,
+  .education-dropdown {
+    display: none !important;
+  }
+}
+
+@media (hover: none) {
+  .collection-card:hover .collection-image {
+    opacity: 1;
+  }
+  
+  .collection-card:hover .collection-hover-image {
+    opacity: 0;
+  }
+  
+  .product-buy-now-btn, 
+  .capsule-buy-now-btn {
+    visibility: visible;
+    opacity: 1;
+  }
+}
