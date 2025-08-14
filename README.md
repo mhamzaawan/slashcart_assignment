@@ -1,4 +1,6 @@
 # slashcart_assignment
+Name: Muhammad Hamza,  
+Contact: 0316-7409577
 # Overview
 This is an assignment from SlashCart pvt ltd, a responsive e-commerce website for Clifton Coffee Roasters, featuring modern UI components, interactive elements, and a mobile-first design approach. The implementation showcases frontend development skills including HTML, CSS, JavaScript, and responsive design principles.
 # Key Features
